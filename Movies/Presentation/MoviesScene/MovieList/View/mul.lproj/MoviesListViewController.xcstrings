@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "AxX-W3-kgZ.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Empty Data Label\"; ObjectID = \"AxX-W3-kgZ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Empty Data Label"
+          }
+        }
+      }
+    },
+    "DM6-EV-NS0.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Release Date\"; ObjectID = \"DM6-EV-NS0\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Release Date"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
