@@ -18,23 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKx-AM-gOb" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6t-R5-oc5" userLabel="Search Bar Container">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="Tzg-1J-5io"/>
+                                            <constraint firstAttribute="height" constant="56" id="qiw-Fv-FlR"/>
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdz-Kh-v8t" userLabel="Movies List Container">
-                                        <rect key="frame" x="0.0" y="56" width="393" height="762"/>
+                                        <rect key="frame" x="0.0" y="56" width="393" height="703"/>
                                         <connections>
                                             <segue destination="7IZ-Bh-5wr" kind="embed" id="I4c-83-ynV"/>
                                         </connections>
                                     </containerView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty Data Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxX-W3-kgZ">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty Data Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxX-W3-kgZ">
                                         <rect key="frame" x="129" y="398.66666666666669" width="135" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,25 +43,23 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="AxX-W3-kgZ" firstAttribute="centerY" secondItem="JKx-AM-gOb" secondAttribute="centerY" id="1mh-SR-3KX"/>
-                                    <constraint firstItem="Hdz-Kh-v8t" firstAttribute="leading" secondItem="JKx-AM-gOb" secondAttribute="leading" id="JQ5-XJ-V1J"/>
-                                    <constraint firstItem="AxX-W3-kgZ" firstAttribute="centerX" secondItem="JKx-AM-gOb" secondAttribute="centerX" id="ceF-y9-Dcx"/>
-                                    <constraint firstItem="A6t-R5-oc5" firstAttribute="top" secondItem="JKx-AM-gOb" secondAttribute="top" id="gdc-AQ-VlL"/>
-                                    <constraint firstAttribute="trailing" secondItem="A6t-R5-oc5" secondAttribute="trailing" id="mV5-Il-sL8"/>
-                                    <constraint firstItem="Hdz-Kh-v8t" firstAttribute="top" secondItem="A6t-R5-oc5" secondAttribute="bottom" id="mv2-Jc-cqS"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hdz-Kh-v8t" secondAttribute="trailing" id="qee-7W-OMy"/>
-                                    <constraint firstItem="A6t-R5-oc5" firstAttribute="leading" secondItem="JKx-AM-gOb" secondAttribute="leading" id="u7l-Lt-kth"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hdz-Kh-v8t" secondAttribute="bottom" id="zHa-QO-N6M"/>
+                                    <constraint firstItem="Hdz-Kh-v8t" firstAttribute="top" secondItem="A6t-R5-oc5" secondAttribute="bottom" id="0ga-WJ-ApK"/>
+                                    <constraint firstItem="Hdz-Kh-v8t" firstAttribute="leading" secondItem="JKx-AM-gOb" secondAttribute="leading" id="EKk-uk-qAr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hdz-Kh-v8t" secondAttribute="trailing" id="RSy-Fd-taT"/>
+                                    <constraint firstItem="A6t-R5-oc5" firstAttribute="leading" secondItem="JKx-AM-gOb" secondAttribute="leading" id="VeK-92-1Bl"/>
+                                    <constraint firstAttribute="trailing" secondItem="A6t-R5-oc5" secondAttribute="trailing" id="cvu-Yt-GMH"/>
+                                    <constraint firstItem="A6t-R5-oc5" firstAttribute="top" secondItem="JKx-AM-gOb" secondAttribute="top" id="enT-X5-LJy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hdz-Kh-v8t" secondAttribute="bottom" id="yGL-z3-stp"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZeX-n1-J4t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JKx-AM-gOb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Eh4-k9-nOl"/>
-                            <constraint firstItem="ZeX-n1-J4t" firstAttribute="trailing" secondItem="JKx-AM-gOb" secondAttribute="trailing" id="M8g-nv-Vah"/>
-                            <constraint firstItem="JKx-AM-gOb" firstAttribute="leading" secondItem="ZeX-n1-J4t" secondAttribute="leading" id="NSr-eX-RUp"/>
-                            <constraint firstItem="ZeX-n1-J4t" firstAttribute="bottom" secondItem="JKx-AM-gOb" secondAttribute="bottom" id="PlF-Fl-dhk"/>
+                            <constraint firstItem="JKx-AM-gOb" firstAttribute="leading" secondItem="ZeX-n1-J4t" secondAttribute="leading" id="DPk-WF-31Z"/>
+                            <constraint firstItem="ZeX-n1-J4t" firstAttribute="bottom" secondItem="JKx-AM-gOb" secondAttribute="bottom" id="Ptl-Kr-TvW"/>
+                            <constraint firstItem="JKx-AM-gOb" firstAttribute="top" secondItem="ZeX-n1-J4t" secondAttribute="top" id="h3o-Ej-eqz"/>
+                            <constraint firstItem="ZeX-n1-J4t" firstAttribute="trailing" secondItem="JKx-AM-gOb" secondAttribute="trailing" id="oCS-Da-JTw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,7 +77,7 @@
             <objects>
                 <viewController id="7IZ-Bh-5wr" customClass="MoviesListTableViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CuC-BU-sVG">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="762"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="703"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -140,7 +139,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

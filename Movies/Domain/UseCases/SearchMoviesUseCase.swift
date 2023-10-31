@@ -9,7 +9,7 @@ import Foundation
 
 protocol SearchMoviesUseCase {
     // 음 UseCase는 이렇게 Request/Response 형식의 메소드들을 가지는건가?
-    func execute(request: SearchMoviesUseCaseRequest) async throws -> (cached: Bool, MoviesPage)
+    func execute(request: SearchMoviesUseCaseRequest) async throws -> (cached: Bool, page: MoviesPage)
 }
 
 final class DefaultSearchMoviesUseCase: SearchMoviesUseCase {
@@ -24,7 +24,7 @@ final class DefaultSearchMoviesUseCase: SearchMoviesUseCase {
         self.moviesQueriesRepository = moviesQueriesRepository
     }
     
-    func execute(request: SearchMoviesUseCaseRequest) async throws -> (cached: Bool, MoviesPage) {
+    func execute(request: SearchMoviesUseCaseRequest) async throws -> (cached: Bool, page: MoviesPage) {
         let result = try await moviesRepository.fetchMoviesList(
             query: request.query, page: request.page)
         

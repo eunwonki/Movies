@@ -15,3 +15,29 @@ enum DataTransferError: Error {
 }
 
 actor DataTransferActor {}
+
+protocol DataTransferService {
+    @discardableResult
+    func request<T: Decodable>(
+        with endpoint: Endpoint<T>
+    ) async throws -> T
+    
+    func request() async throws
+}
+
+final class DefaultDataTransferService {
+    private let networkService: NetworkService
+    
+    init(with networkService: NetworkService) {
+        self.networkService = networkService
+    }
+}
+
+extension DefaultDataTransferService: DataTransferService {
+    func request<T>(with endpoint: Endpoint<T>) async throws -> T where T : Decodable {
+        return try await networkService.request(endpoint: endpoint)
+    }
+    
+    func request() async throws {}
+    
+}

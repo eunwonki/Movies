@@ -35,9 +35,10 @@ extension MoviesListTableViewController {
         
         // TODO: cell.fill
         
-        if indexPath.row == viewModel.items.count().output - 1 {
-            viewModel.didLoadNextPage()
-        }
+        // TODO: paging
+//        if indexPath.row == viewModel.items.count().output - 1 {
+//            viewModel.didLoadNextPage()
+//        }
         
         return cell
     }
